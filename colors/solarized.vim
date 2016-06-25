@@ -6,6 +6,11 @@
 " Created:  In the middle of the night
 " Modified: 2011 May 05
 "
+"
+
+
+
+"
 " Usage "{{{
 "
 " ---------------------------------------------------------------------
@@ -654,7 +659,7 @@ exe "hi! DiffDelete"     .s:fmt_none   .s:fg_red    .s:bg_base02
 exe "hi! DiffText"       .s:fmt_none   .s:fg_blue   .s:bg_base02 .s:sp_blue
     endif
 endif
-exe "hi! SignColumn"     .s:fmt_none   .s:fg_base0
+exe "hi! SignColumn"     .s:fmt_none   .s:fg_base0  .s:bg_base02 .s:sp_base0
 exe "hi! Conceal"        .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! SpellBad"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_red
 exe "hi! SpellCap"       .s:fmt_curl   .s:fg_none   .s:bg_none    .s:sp_violet
@@ -701,6 +706,8 @@ exe "hi! vimSynType"        .s:fmt_none    .s:fg_cyan   .s:bg_none
 exe "hi! vimHiLink"         .s:fmt_none    .s:fg_blue   .s:bg_none
 exe "hi! vimHiGroup"        .s:fmt_none    .s:fg_blue   .s:bg_none
 exe "hi! vimGroup"          .s:fmt_undb    .s:fg_blue   .s:bg_none
+exe "hi! SignError" .s:fmt_none .s:fg_red .s:bg_base02
+exe "hi! SignWarning" .s:fmt_none .s:fg_yellow .s:bg_base02
 "}}}
 " diff highlighting "{{{
 " ---------------------------------------------------------------------
